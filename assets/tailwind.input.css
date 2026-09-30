@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* explicit globs: no guessing about what gets scanned */
+@source "../templates/**/*.html";
+@source "../apps/**/*.{html,py}";
+
+@theme {
+  /* brand */
+  --color-brand-50:  #effaf8;
+  --color-brand-100: #d5f2ee;
+  --color-brand-500: #14877d;
+  --color-brand-600: #0f766e;   /* CTA teal */
+  --color-brand-700: #0d5f59;
+  --color-ink:       #0b3b36;   /* headings, dark banner */
+  --color-nav:       #0a0a0a;
+  --color-surface:   #f6f6f6;
+
+  /* pastel card tints */
+  --color-tint-mint:     #e3f3ef;
+  --color-tint-peach:    #fbe9dc;
+  --color-tint-rose:     #f8e1e1;
+  --color-tint-lavender: #e9e6f5;
+  --color-tint-sky:      #dcedf4;
+
+  /* peptide status badges */
+  --color-status-fda-bg:      #dcf3e6;
+  --color-status-fda-fg:      #17703f;
+  --color-status-compound-bg: #dbeafe;
+  --color-status-compound-fg: #1d4f91;
+  --color-status-research-bg: #ececec;
+  --color-status-research-fg: #555555;
+
+  /* type */
+  --font-display: "Saira Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* shape */
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / .04), 0 8px 24px rgb(11 59 54 / .06);
+}

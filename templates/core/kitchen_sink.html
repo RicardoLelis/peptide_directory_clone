@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Design system · MyPeptideMatch{% endblock %}
+
+{% block content %}
+<section class="hero-bg py-16">
+  <div class="mx-auto max-w-6xl px-6 text-center">
+    <span class="eyebrow rounded-full bg-white px-4 py-1 shadow-card">Independent peptide therapy directory</span>
+    <h1 class="mt-6 text-5xl md:text-6xl">Peptide Therapy Clinics, Peptides &amp; Dosing Tools</h1>
+
+    <div class="search-pill mx-auto mt-8 max-w-2xl">
+      <input class="flex-1 bg-transparent outline-none" placeholder="Enter zip code or city...">
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </div>
+</section>
+
+<div class="mx-auto max-w-6xl space-y-12 px-6 py-12">
+
+  <div>
+    <h2 class="text-3xl">Buttons</h2>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-ghost shadow-card">Ghost</button>
+      <button class="btn btn-primary px-10">Primary px-10 (layer test)</button>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-3xl">Badges</h2>
+    <div class="mt-4 flex gap-3">
+      <span class="badge badge-fda">FDA Approved</span>
+      <span class="badge badge-compound">Compounding</span>
+      <span class="badge badge-research">Research Use</span>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-3xl">Cards</h2>
+    <div class="mt-4 grid gap-6 md:grid-cols-3">
+      <div class="card">
+        <div class="flex items-start justify-between">
+          <h3 class="text-xl">Semaglutide</h3>
+          <span class="badge badge-fda">FDA Approved</span>
+        </div>
+        <p class="mt-1 text-sm font-semibold text-brand-600">GLP-1 Receptor Agonist</p>
+        <p class="mt-2 text-sm text-gray-600">Utility-only entity card, the pattern for the peptide grid.</p>
+      </div>
+      <div class="rounded-card bg-tint-peach p-5">
+        <h3 class="text-xl">Weight Loss</h3>
+        <p class="mt-2 text-sm">Tinted category card built only from utilities.</p>
+        <a href="#" class="btn btn-ghost mt-4 text-sm">Explore →</a>
+      </div>
+      <div class="rounded-card bg-tint-lavender p-5">
+        <h3 class="text-xl">Cognitive Enhancement</h3>
+        <p class="mt-2 text-sm">Same pattern, different tint token.</p>
+        <a href="#" class="btn btn-ghost mt-4 text-sm">Explore →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

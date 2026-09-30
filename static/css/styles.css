@@ -1,0 +1,27 @@
+/* Wrapped in @layer so Tailwind utilities can still override these components.
+   Unlayered CSS would beat every utility, and px-8 on a .btn would silently fail. */
+@layer components {
+  body { font-family: var(--font-sans); color: #1f2937; background: var(--color-surface); }
+  h1, h2, h3 { font-family: var(--font-display); color: var(--color-ink);
+               font-weight: 700; letter-spacing: -0.01em; line-height: 1.05; }
+
+  .eyebrow { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+             color: var(--color-ink); font-weight: 600; }
+
+  .btn { display: inline-flex; align-items: center; gap: .4rem; padding: .65rem 1.25rem;
+         border-radius: 9999px; font-weight: 600; font-size: .9rem; transition: .15s; }
+  .btn-primary { background: var(--color-brand-600); color: #fff; }
+  .btn-primary:hover { background: var(--color-brand-700); }
+  .btn-ghost { background: #fff; color: var(--color-ink); }
+
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 1.25rem; }
+
+  .badge { font-size: .7rem; font-weight: 600; padding: .2rem .6rem; border-radius: 9999px; }
+  .badge-fda      { background: var(--color-status-fda-bg);      color: var(--color-status-fda-fg); }
+  .badge-compound { background: var(--color-status-compound-bg); color: var(--color-status-compound-fg); }
+  .badge-research { background: var(--color-status-research-bg); color: var(--color-status-research-fg); }
+
+  .hero-bg { background: linear-gradient(180deg, var(--color-tint-mint), #fff 85%); }
+  .search-pill { display: flex; align-items: center; background: #fff; border-radius: 9999px;
+                 box-shadow: var(--shadow-card); padding: .4rem .4rem .4rem 1.2rem; }
+}

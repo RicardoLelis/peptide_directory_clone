@@ -1,0 +1,23 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+static/css/tailwind.min.css
+tools/tailwindcss
+
+
+# Environments & Packages
+.env
+.venv/
+.uv/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+flake8/
+
+# macOS system files
+.DS_Store
